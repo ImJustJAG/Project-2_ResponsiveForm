@@ -10,3 +10,7 @@ img {
 html {
     scroll-behavior: smooth;
 }
+
+.the-viewport{
+    min-height: 100vh;
+}
