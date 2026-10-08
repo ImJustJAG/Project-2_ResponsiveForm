@@ -7,10 +7,54 @@ img {
     height: auto;
 }
 
+.cta-image{
+    max-width: 100px;
+    height: auto;
+    border: 6px solid #ffd700;
+    
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 .the-viewport{
     min-height: 100vh;
+}
+
+.landing-cta{
+    background-image: url(https://tile.loc.gov/image-services/iiif/service:pnp:highsm:31200:31233/full/pct:25/0/default.jpg);
+    background-position: calc(50% - 11px) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid #deb887;
+    padding-top: 40px;
+    padding-bottom: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.cta-content-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-content-container a{
+    text-decoration: none;
+    background-color: #deb887;
+    color:#000009;
+    border: 6px solid #53351b;
+    padding: 5px;
+    border-radius: 0.6rem;
+}
+
+.cta-content{
+    text-align: center;
+    background-color: #deb887;
+    border: 6px solid #53351b;
+    border-radius: 0.6rem;
+    padding: 8px 12px;
+    position: relative;
 }
