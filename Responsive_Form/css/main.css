@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #87ADDE
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1111px;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -24,10 +33,10 @@ html {
 
 .landing-cta{
     background-image: url(https://tile.loc.gov/image-services/iiif/service:pnp:highsm:31200:31233/full/pct:25/0/default.jpg);
-    background-position: calc(50% - 11px) center;
+    background-position: calc(50% - 0px) center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 10px solid #deb887;
+    border: 8px solid #deb887;
     padding-top: 40px;
     padding-bottom: 300px;
     max-width: 100%;
@@ -57,4 +66,47 @@ html {
     border-radius: 0.6rem;
     padding: 8px 12px;
     position: relative;
+}
+
+form {
+    background-color: #deb887;
+    padding: 20px;
+    margin-top: 10px;
+    border: 6px solid #53351b;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.form-element {
+    margin-bottom: 16px;
+}
+
+.form-element label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-element input,
+.form-element textarea {
+    display: block;
+    width: 100%;
+}
+
+.candidate-options {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 30px;
+  justify-items: center;
+}
+
+.info-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+}
+
+input {
+  margin: 0.4rem;
 }
