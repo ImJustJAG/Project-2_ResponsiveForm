@@ -71,7 +71,7 @@ html {
 form {
     background-color: #deb887;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
     border: 6px solid #53351b;
     border-radius: 12px;
     margin-bottom: 40px;
@@ -95,9 +95,32 @@ form {
 
 .candidate-options {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px 30px;
-  justify-items: center;
+}
+
+/* selects the child divs of .candidate-options */
+.candidate-options > div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.candidate-options label {
+  white-space: nowrap;
+}
+
+.candidate-exhibit {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 30px;
+}
+
+.candidate-portrait {
+    background-color: #c7b38f;
+    border: 3px solid #53351b;
+    text-align: center;
 }
 
 .info-input {
@@ -108,4 +131,12 @@ form {
 
 input {
   margin: 0.4rem;
+}
+
+/* @media styles go HERE */
+
+@media (max-width: 480px) {
+  .candidate-options {
+    grid-template-columns: 1fr;
+  }
 }
