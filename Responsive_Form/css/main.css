@@ -129,6 +129,30 @@ form {
   align-items: flex-start;
 }
 
+.submission-confirmation {
+  width: min(90vw, 480px);
+  border: 6px solid #53351b;
+  border-radius: 12px;
+  background-color: #deb887;
+  color: #000009;
+  padding: 24px;
+}
+
+.submission-confirmation p {
+  overflow-wrap: anywhere;
+}
+
+.confirmation-close,
+.submit-vote-button {
+  border: 2px solid #53351b;
+  border-radius: 0.4rem;
+  background-color: #c7b38f;
+  padding: 8px 16px;
+  color: #000009;
+  font: inherit;
+  cursor: pointer;
+}
+
 input {
   margin: 0.4rem;
 }

@@ -50,8 +50,9 @@
    
    <main>
     
-    <form id="form" action="./thank-you.html">
+    <form id="form" action="">
       
+      <!-- candidate portraits -->
       <div class="candidate-exhibit">
         <div class="candidate-portrait">
           <img src="img/Judgeful-Janice.jpg">
@@ -83,12 +84,13 @@
           <p>Mr Mogbert</p>
         </div>
       </div>
-
+      
+      <!-- Candidate options -->
       <fieldset>
         <legend>
           So... WHO will it BE!??
         </legend>
-
+        
         <div class="candidate-options">
         
           <div>
@@ -124,6 +126,7 @@
         </div>
       </fieldset>
 
+      <!-- User name, email, and quote input -->
       <div class="info-input" id="candidates">
         <div class="form-element">
           <label for="name">Your name:</label>
@@ -144,8 +147,13 @@
       </div>
     </form>
     
-
-   </main>
+    <!-- Submission results pop-up window -->
+    <dialog class="submission-confirmation" id="submission-confirmation" aria-labelledby="confirmation-title">
+      <p>Thank you for voting for <span id="confirmation-candidate"></span>, <span id="confirmation-name"></span>!</p>
+      <p>And remember... <span id="confirmation-message"></span></p>
+      <button class="confirmation-close" type="button">Close</button>
+    </dialog>
+  </main>
   
   <script src="js/main.js"></script>
 </body>
