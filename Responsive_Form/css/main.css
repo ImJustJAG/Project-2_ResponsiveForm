@@ -3,7 +3,8 @@
 }
 
 body{
-    background-color: #87ADDE
+    background-color: #87ADDE;
+    font-family: "Noto Sans Phoenician", sans-serif;
 }
 
 main {
@@ -106,6 +107,8 @@ form {
   gap: 0.4rem;
 }
 
+/* Candidate gallery styles go HERE */
+
 .candidate-options label {
   white-space: nowrap;
 }
@@ -123,12 +126,24 @@ form {
     text-align: center;
 }
 
+/* input styles go HERE */
+input {
+  margin: 0.4rem;
+}
+
 .info-input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.form-element input[type="text"],
+.form-element input[type="email"],
+.form-element textarea {
+  background-color: #f5e6c8;
+}
+
+/* submission and conformation styles go HERE */
 .submission-confirmation {
   width: min(90vw, 480px);
   border: 6px solid #53351b;
@@ -148,17 +163,9 @@ form {
   border-radius: 0.4rem;
   background-color: #c7b38f;
   padding: 8px 16px;
-  color: #000009;
-  font: inherit;
-  cursor: pointer;
-}
-
-input {
-  margin: 0.4rem;
 }
 
 /* @media styles go HERE */
-
 @media (max-width: 480px) {
   .candidate-options {
     grid-template-columns: 1fr;
@@ -173,4 +180,11 @@ input {
   .candidate-options {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+/* font styles go HERE */
+.noto-sans-phoenician-regular {
+  font-family: "Noto Sans Phoenician", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
